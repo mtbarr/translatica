@@ -8,6 +8,13 @@
 Add the following dependency to your `pom.xml`:
 
 ```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
 <dependency>
     <groupId>io.github.mtbarr</groupId>
     <artifactId>translatica</artifactId>
@@ -19,6 +26,10 @@ Add the following dependency to your `pom.xml`:
 Add the following to your `build.gradle`:
 
 ```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
 dependencies {
     implementation 'io.github.mtbarr:translatica:1.0-SNAPSHOT'
 }
